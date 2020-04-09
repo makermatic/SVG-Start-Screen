@@ -3,9 +3,6 @@ let headerFont
 let subFont
 let screen
 
-function preload () {
-  
-}
 
 function setup () {
   screen = createVideo("/assets/Starting Screen.mp4")
