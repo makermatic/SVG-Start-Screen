@@ -4,10 +4,12 @@ let subFont
 let screen
 
 function setup () {
-  noCanvas()
   screen = createVideo("/assets/Starting Screen.mp4")
-  screen.size(1920, 1080)
   screen.play()
+  screen.size (1920, 1080)
+  createCanvas(screen.size())
+  background("beige")
+  frameRate(30)
 }
 
 function draw() {

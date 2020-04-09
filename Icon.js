@@ -29,9 +29,7 @@ class Icon {
     else {
       console.log("Master Zack Says: Failed to load images, you may want to check the spelling of your images again.")
     }
-
-    texture(this.image)
-    ellipse(this.x, this.y, width, height)
+    
     fill(this.image)
     ellipse(this.x, this.y, this.up, this.down)
     text(this.playerName, this.x, this.y - 50)
