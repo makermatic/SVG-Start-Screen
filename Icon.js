@@ -3,10 +3,11 @@ class Icon {
     this.player = player
     this.playerName = playerName
     this.image
-    this.x = 150
-    this.y = 0
-    this.width = 0
-    this.height = 0
+    this.x = 
+    this.y = 500
+    this.textY = 180
+    this.width = 300
+    this.height = 300
     this.speed = 35
   }
 
@@ -18,11 +19,11 @@ class Icon {
   imagePick() {
     if (this.player === "player1") {
       this.image === this.p1
-      this.x === 150
+      this.x === 200
     }
     else if (this.player === "player2") {
       this.image === this.p2
-      this.x = 400
+      this.x = 1300
     }
     else {
       console.log("Master Zack Says: Failed to load images, you may want to check the spelling of your images again.")
@@ -30,8 +31,15 @@ class Icon {
   }
 
   display() {
+    //Text Setup
+    noStroke()
     fill("blue")
     ellipse(this.x, this.y, this.width, this.height)
-    text(this.playerName, this.x, this.y - 50)
+    
+    //Text Setup
+    fill ("white")
+    textSize(65)
+    textAlign(CENTER, CENTER)
+    text(this.playerName, this.x, this.y + this.textY)
   }
 }

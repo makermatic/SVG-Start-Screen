@@ -2,13 +2,14 @@
 let subFont
 let p1
 let p2
+let timer
 
 function preload() {
   p1 = new Icon("player1", "Kiddo")
-  p1.loadImages()
   p2 = new Icon("player2", "Skull Kid")
-  p2.loadImages()
   subFont = loadFont("/assets/proxima.otf")
+
+  timer = loadFont
 }
 
 function setup() {
