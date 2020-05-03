@@ -15,13 +15,15 @@ function preload() {
 function setup() {
   createCanvas(1920, 1080)
   frameRate(30) //cap framerate to match gif
-  background ("beige") //added for testing purposes
   textFont(subFont)
 }
 
 function draw() {
+  background ("beige") //added for testing purposes
   p1.imagePick()
   p1.display()
   p2.imagePick()
   p2.display()
+
+  p2.move()
 }

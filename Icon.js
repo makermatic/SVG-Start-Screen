@@ -5,7 +5,7 @@ class Icon {
     this.image
     this.x = 
     this.y = 500
-    this.textY = 180
+    this.textY = 680
     this.width = 300
     this.height = 300
     this.speed = 35
@@ -40,6 +40,17 @@ class Icon {
     fill ("white")
     textSize(65)
     textAlign(CENTER, CENTER)
-    text(this.playerName, this.x, this.y + this.textY)
+    text(this.playerName, this.x, this.textY)
+  }
+
+  move () {
+    this.y++
+    console.log ("y:", this.y)
+    if (this.y === 520) {
+      this.y = this.y - 2
+    }
+    if (this.y === 490) {
+      this.y = this.y + 2
+    }
   }
 }
