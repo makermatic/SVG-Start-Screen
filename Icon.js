@@ -19,7 +19,7 @@ class Icon {
   display() {
     //Icon Setup
     noStroke()
-    fill("blue")
+    fill(this.player === "player1" ? "red" : "blue")
     ellipse(this.x, this.y, this.width, this.height)
     
     //Text Setup

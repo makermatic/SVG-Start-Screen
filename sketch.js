@@ -22,6 +22,7 @@ function setup() {
 function draw() {
   clear()
   // background ("red")
+  
   //Versus text
   fill ("white")
   textSize (150)
