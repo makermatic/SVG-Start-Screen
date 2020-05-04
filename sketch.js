@@ -2,14 +2,11 @@
 let subFont
 let p1
 let p2
-let timer
 
 function preload() {
   p1 = new Icon("player1", "Kiddo")
   p2 = new Icon("player2", "Skull Kid")
   subFont = loadFont("/assets/proxima.otf")
-
-  timer = loadFont
 }
 
 function setup() {
@@ -20,10 +17,9 @@ function setup() {
 
 function draw() {
   background ("beige") //added for testing purposes
-  p1.imagePick()
   p1.display()
-  p2.imagePick()
   p2.display()
 
+  p1.move()
   p2.move()
 }
