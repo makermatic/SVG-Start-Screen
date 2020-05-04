@@ -8,7 +8,7 @@ class Icon {
     this.x = (this.player === "player1") ? 400 : 1300 
     this.y = 500
 
-    this.textY = 680
+    this.textY = 690
 
     this.width = 300
     this.height = 300
@@ -31,7 +31,9 @@ class Icon {
 
   move() {
     this.y += this.speed;
-    if (this.y <= 490 || 520 <= this.y) {
+    if ((this.player === "player1") && (this.y <= 493 || 520 <= this.y)) {
+      this.speed = -this.speed;
+    } else if (this.y <= 493 || 523 <= this.y) {
       this.speed = -this.speed;
     }
   }
