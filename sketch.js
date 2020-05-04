@@ -20,8 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background ("red") //added for testing purposes
-
+  clear()
   //Versus text
   fill ("white")
   textSize (150)
