@@ -20,8 +20,8 @@ function setup() {
 }
 
 function draw() {
-  clear()
-  // background ("red")
+  // clear()
+  background ("red")
   
   //Versus text
   fill ("white")

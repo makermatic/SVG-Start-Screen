@@ -8,7 +8,7 @@ class Icon {
     this.x = (this.player === "player1") ? 400 : 1450 
     this.y = 500
 
-    this.textY = 690
+    this.textY = 900
 
     this.width = 300
     this.height = 300
@@ -20,14 +20,14 @@ class Icon {
     //Icon Setup
     noStroke()
     fill(this.player === "player1" ? "red" : "blue")
-    ellipse(this.x, this.y, this.width, this.height)
+    image(this.image,this.x, this.y, this.width, this.height)
     
     //Text Setup
     fill ("white")
     textSize(65)
     textAlign(CENTER, CENTER)
     textFont(subFont)
-    text(this.playerName, this.x, this.textY)
+    text(this.playerName, this.x + 150, this.textY)
   }
 
   move() {
