@@ -10,7 +10,7 @@ function preload() {
   p1 = new Icon("player1", "Kiddo")
   p2 = new Icon("player2", "Skull Kid")
   subFont = loadFont("/assets/proxima.otf")
-  vs = loadFont ("/assets/passion.otf")
+  vs = loadFont("/assets/passion.otf")
 }
 
 function setup() {
@@ -20,15 +20,15 @@ function setup() {
 }
 
 function draw() {
-  // clear()
-  background ("red") //comment out when done testing
-  
+  clear()
+  // background("red") //comment out when done testing
+
   //Versus text
-  fill ("white")
-  textSize (150)
+  fill("white")
+  textSize(150)
   textFont(vs)
   textAlign(CENTER, CENTER)
-  text ("vs", width/2, height/2)
+  text("vs", width / 2, height / 2)
 
   p1.display()
   p2.display()
