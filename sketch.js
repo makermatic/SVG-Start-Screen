@@ -21,7 +21,7 @@ function setup() {
 
 function draw() {
   // clear()
-  background ("red")
+  background ("red") //comment out when done testing
   
   //Versus text
   fill ("white")

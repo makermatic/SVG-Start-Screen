@@ -5,10 +5,10 @@ class Icon {
 
     this.image = (this.player === "player1") ? loadImage("assets/P1.png") : loadImage ("assets/P2.png")
     
-    this.x = (this.player === "player1") ? 400 : 1450 
-    this.y = 500
+    this.x = (this.player === "player1") ? 250 : 1350 
+    this.y = 400
 
-    this.textY = 900
+    this.textY = 740
 
     this.width = 300
     this.height = 300
@@ -32,9 +32,9 @@ class Icon {
 
   move() {
     this.y += this.speed;
-    if ((this.player === "player1") && (this.y <= 493 || 520 <= this.y)) {
+    if ((this.player === "player1") && (this.y <= 393 || 420 <= this.y)) {
       this.speed = -this.speed;
-    } else if (this.y <= 490 || 523 <= this.y) {
+    } else if (this.y <= 390 || 423 <= this.y) {
       this.speed = -this.speed;
     }
   }
