@@ -1,7 +1,10 @@
 class Icon {
-  constructor(player, playerName) {
+  constructor(player, playerName, crown) {
     this.player = player
     this.playerName = playerName
+
+    this.crown = crown
+    this.crownImage = loadImage("assets/crown.png")
 
     this.image = (this.player === "player1") ? loadImage("assets/P1.png") : loadImage("assets/P2.png")
 
@@ -28,6 +31,11 @@ class Icon {
     textAlign(CENTER, CENTER)
     textFont(subFont)
     text(this.playerName, this.x + 150, this.textY)
+
+    //Crown Setup
+    if (this.crown === "win") {
+      image (this.crownImage, this.x + 200, this.y - 25, 70, 70)
+    }
   }
 
   move() {
