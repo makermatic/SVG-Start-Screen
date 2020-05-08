@@ -29,7 +29,7 @@
     - If you don't do this correctly, the image won't display.
 8. Push the changes in Github Desktop.
 
-# How to Push Changes in Github Desktop##
+# How to Push Changes in Github Desktop
 1. In Github Desktop, verify that changes have been made.
     - The icon parameters have been changed.
     - The iamges have been replaced and the template file has been updated.
