@@ -42,5 +42,5 @@
 
 # Known Issues/Caveats
 1. Global variable for timer has been declared, but doesn't serve a purpose. If used properly, it could trigger a movement state for the icons to exit out from the canvas. 
-2. While `textAlign()` is set the`CENTER` and has a bounding box of `CENTER`, its possible that having a lot of characters could break that placement.
+2. While `textAlign()` is set to `CENTER` and has a bounding box of `CENTER`, its possible that having a lot of characters could break that placement.
     - One way to fix it is to decrease `textSize()`, but what if you forget what the original font size was.
