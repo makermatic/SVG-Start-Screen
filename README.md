@@ -1,22 +1,22 @@
 # SVG Start Screen
  SVG Start Screen Version 1.1
 
-##Downloading for Editing for the First Time##
-1. Create a github account and make sure you're invited to collaborate.
+# Downloading for Editing for the First Time##
+1. Create a Github account and make sure you're invited to collaborate.
 2. Download any code editor (*VS Code reccomended*) and Github Desktop.
      - Optional: If using *VS Code*, download the Live Server extension for   testing.
-3. Go through setup and set your default github folder
+3. Go through setup and set your default Github folder
 4. Clone the master branch.
         - Optional: Feel free to duplicate the master and make it your own branch
-5. Open folder in code editor.
+5. Open the folder in your code editor of choice.
 
-##Changing Player Names##
-1. In `sketch.js`, change the second parameter in lines 10 and 11.
+# Changing Player Names
+1. In `sketch.js`, change the second parameter in lines 10 and/or 11.
     - **Make sure the names are in quotation marks** or the code will crash.
     - If the text looks off in OBS, feel free to change the parameters in line 33 of `icon.js`.
 2. Save changes in your code editor and push the changes in Github Desktop.
 
-##Changing Player Icons##
+# Changing Player Icons
 1. Find an image or obtain one from the player that best represents him/her.
 2. Open `Icon Template.psd` in Photoshop (CC 2020 or earlier).
 3. In Photoshop, Drag the *new* image as a new layer.
@@ -29,9 +29,9 @@
     - If you don't do this correctly, the image won't display.
 8. Push the changes in Github Desktop
 
-##How to Push Changes in Github Desktop##
+# How to Push Changes in Github Desktop##
 1. In Github Desktop, verify that changes have been made
-    - The parameters have been changed
+    - The icon parameters have been changed
     - The iamges have been replaced and the template file has been updated
 2. In the `summary` window, type in changes that have been made
     - Example: Updated icons and names for 5/8 show
