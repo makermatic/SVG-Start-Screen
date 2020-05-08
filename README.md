@@ -1,7 +1,7 @@
 # SVG Start Screen
  SVG Start Screen Version 1.1
 
-# Downloading for Editing for the First Time##
+# Downloading for Editing for the First Time
 1. Create a Github account and make sure you're invited to collaborate.
 2. Download any code editor (*VS Code reccomended*) and Github Desktop.
      - Optional: If using *VS Code*, download the Live Server extension for   testing.
