@@ -27,15 +27,20 @@
 7. **VERY IMPORTANT:** Save the image as either `P1.png` or `P2.png`, depending on the player you're changing.
     - If asked to replace the image, replace it. Its okay!
     - If you don't do this correctly, the image won't display.
-8. Push the changes in Github Desktop
+8. Push the changes in Github Desktop.
 
 # How to Push Changes in Github Desktop##
-1. In Github Desktop, verify that changes have been made
-    - The icon parameters have been changed
-    - The iamges have been replaced and the template file has been updated
-2. In the `summary` window, type in changes that have been made
+1. In Github Desktop, verify that changes have been made.
+    - The icon parameters have been changed.
+    - The iamges have been replaced and the template file has been updated.
+2. In the `summary` window, type in changes that have been made.
     - Example: Updated icons and names for 5/8 show
-    - You can ignore `description` as no one reads
-3. Hit `Commit to master`
-4. At the top of the window, hit `Push origin`
-5. After it pushes the changes and resolves deltas, the code should be updated on the site in >30 seconds, sometimes even shorter
+    - You can ignore `description` as no one reads.
+3. Hit `Commit to master`.
+4. At the top of the window, hit `Push origin`.
+5. After it pushes the changes and resolves deltas, the code should be updated. on the site in >30 seconds, sometimes even shorter.
+
+# Known Issues/Caveats
+1. Global variable for timer has been declared, but doesn't serve a purpose. If used properly, it could trigger a movement state for the icons to exit out from the canvas. 
+2. While `textAlign()` is set the`CENTER` and has a bounding box of `CENTER`, its possible that having a lot of characters could break that placement.
+    - One way to fix it is to decrease `textSize()`, but what if you forget what the original font size was.
