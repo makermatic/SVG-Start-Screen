@@ -1,7 +1,7 @@
 # SVG Start Screen
  SVG Start Screen Version 1.1
 
-# Downloading for Editing for the First Time
+## Downloading for Editing for the First Time
 1. Create a Github account and make sure you're invited to collaborate.
 2. Download any code editor (*VS Code reccomended*) and Github Desktop.
      - Optional: If using *VS Code*, download the Live Server extension for   testing.
@@ -10,13 +10,13 @@
         - Optional: Feel free to duplicate the master and make it your own branch
 5. Open the folder in your code editor of choice.
 
-# Changing Player Names
+## Changing Player Names
 1. In `sketch.js`, change the second parameter in lines 10 and/or 11.
     - **Make sure the names are in quotation marks** or the code will crash.
     - If the text looks off in OBS, feel free to change the parameters in line 33 of `icon.js`.
 2. Save changes in your code editor and push the changes in Github Desktop.
 
-# Changing Player Icons
+## Changing Player Icons
 1. Find an image or obtain one from the player that best represents him/her.
 2. Open `Icon Template.psd` in Photoshop (CC 2020 or earlier).
 3. In Photoshop, Drag the *new* image as a new layer.
@@ -29,7 +29,7 @@
     - If you don't do this correctly, the image won't display.
 8. Push the changes in Github Desktop.
 
-# How to Push Changes in Github Desktop
+## How to Push Changes in Github Desktop
 1. In Github Desktop, verify that changes have been made.
     - The icon parameters have been changed.
     - The iamges have been replaced and the template file has been updated.
@@ -40,7 +40,7 @@
 4. At the top of the window, hit `Push origin`.
 5. After it pushes the changes and resolves deltas, the code should be updated. on the site in >30 seconds, sometimes even shorter.
 
-# Known Issues/Caveats
-1. Global variable for timer has been declared, but doesn't serve a purpose. If used properly, it could trigger a movement state for the icons to exit out from the canvas. 
+## Known Issues/Caveats
+1. Global variable for timer has been declared, but doesn't serve a purpose. It may slow down netlify, even if it isn't printed to console. But if used properly, it could trigger a movement state for the icons to exit out from the canvas.
 2. While `textAlign()` is set to `CENTER` and has a bounding box of `CENTER`, its possible that having a lot of characters could break that placement.
     - One way to fix it is to decrease `textSize()`, but what if you forget what the original font size was.
