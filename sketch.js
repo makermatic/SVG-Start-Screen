@@ -16,7 +16,7 @@ function preload() {
 function setup() {
   createCanvas(1920, 1080)
   frameRate(30) //cap framerate to match layout
-  textFont(subFont)
+  textFont(subFont) //declared font in setup() so it locks in text for p1 and p2
 }
 
 function draw() {
