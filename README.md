@@ -32,7 +32,7 @@
 ## How to Push Changes in Github Desktop
 1. In Github Desktop, verify that changes have been made.
     - The icon parameters have been changed.
-    - The iamges have been replaced and the template file has been updated.
+    - The images have been replaced and the template file has been updated.
 2. In the `summary` window, type in changes that have been made.
     - Example: Updated icons and names for 5/8 show
     - You can ignore `description` as no one reads.
