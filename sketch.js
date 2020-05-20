@@ -4,7 +4,7 @@ let vs
 let p1
 let p2
 
-let timer = 300
+// let timer = 300
 
 function preload() {
   p1 = new Icon("player1", "Bill")
@@ -36,8 +36,8 @@ function draw() {
   p1.move()
   p2.move()
 
-  //Timer
-  if (frameCount % 30 === 0 && timer > 0) {
-    timer--
-  }
+  // //Timer
+  // if (frameCount % 30 === 0 && timer > 0) {
+  //   timer--
+  // }
 }
