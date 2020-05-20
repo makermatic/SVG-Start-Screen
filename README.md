@@ -1,5 +1,5 @@
 # SVG Start Screen
- SVG Start Screen Version 1.1
+ SVG Start Screen Version 1.1.2
 
 ## Downloading for Editing for the First Time
 1. Create a Github account and make sure you're invited to collaborate.
@@ -41,6 +41,11 @@
 5. After it pushes the changes and resolves deltas, the code should be updated. on the site in >30 seconds, sometimes even shorter.
 
 ## Known Issues/Caveats
-1. Global variable for timer has been declared, but doesn't serve a purpose. It may slow down netlify, even if it isn't printed to console. But if used properly, it could trigger a movement state for the icons to exit out from the canvas.
+1. Global variable for timer has been declared, but doesn't serve a purpose. It may slow down netlify, even if it isn't printed to console. But if used properly, it could trigger a movement state for the icons to exit out from the canvas. 
+    - **Update**: Timer has been commented out but can easily be brought in
 2. While `textAlign()` is set to `CENTER` and has a bounding box of `CENTER`, its possible that having a lot of characters could break that placement.
     - One way to fix it is to decrease `textSize()`, but what if you forget what the original font size was.
+
+## Change Log
+### v1.1.2
+ - Timer var and widget have been commented out to save OBS/browser performance
