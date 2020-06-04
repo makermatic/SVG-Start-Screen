@@ -7,7 +7,7 @@ let p2
 // let timer = 300
 
 function preload() {
-  p1 = new Icon("player1", "DVD")
+  p1 = new Icon("player1", "johnnyPOP")
   p2 = new Icon("player2", "SkullKid")
   subFont = loadFont("/assets/proxima.otf")
   vs = loadFont("/assets/passion.otf")
