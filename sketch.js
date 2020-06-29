@@ -8,7 +8,7 @@ let p2
 
 function preload() {
   p1 = new Icon("player1", "johnnyPOP")
-  p2 = new Icon("player2", "SkullKid")
+  p2 = new Icon("player2", "SkullKid", "win")
   subFont = loadFont("/assets/proxima.otf")
   vs = loadFont("/assets/passion.otf")
 }
