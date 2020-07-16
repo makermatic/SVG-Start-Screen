@@ -1,6 +1,6 @@
 //global vars
 let subFont
-let vs
+let headFont
 let p1
 let p2
 
@@ -10,7 +10,7 @@ function preload() {
   p1 = new Icon("player1", "Emagination")
   p2 = new Icon("player2", "NiceGuyRy")
   subFont = loadFont("/assets/proxima.otf")
-  vs = loadFont("/assets/passion.otf")
+  headFont = loadFont("/assets/passion.otf")
 }
 
 function setup() {
@@ -26,7 +26,7 @@ function draw() {
   //Versus text
   fill("white")
   textSize(150)
-  textFont(vs)
+  textFont(headFont)
   textAlign(CENTER, CENTER)
   text("vs", width / 2, height / 2)
 

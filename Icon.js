@@ -1,10 +1,12 @@
 class Icon {
-  constructor(player, playerName, crown) {
+  constructor(player, playerName, crown, score) {
     this.player = player
     this.playerName = playerName
 
     this.crown = crown
     this.crownImage = loadImage("assets/crown.png")
+
+    this.score = score
 
     this.image = (this.player === "player1") ? loadImage("assets/P1.png") : loadImage("assets/P2.png")
 
@@ -35,6 +37,15 @@ class Icon {
     //Crown Setup
     if (this.crown === "win") {
       image (this.crownImage, this.x + 200, this.y - 25, 70, 70)
+    }
+
+    //Score Setup
+    textFont (headFont)
+    textSize (150)
+    if (this.score != null && this.player === "player1") {
+      text (this.score, this.x + 430, 480)
+    } else if (this.player === "player2") {
+      text (this.score, this.x - 150, 480)
     }
   }
 
