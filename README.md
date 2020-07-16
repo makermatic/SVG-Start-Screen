@@ -1,5 +1,5 @@
 # SVG Start Screen
- SVG Start Screen Version 1.1.2
+ SVG Start Screen Version 1.2.1
 
 ## Downloading for Editing for the First Time
 1. Create a Github account and make sure you're invited to collaborate.
@@ -29,6 +29,17 @@
     - If you don't do this correctly, the image won't display.
 8. Push the changes in Github Desktop.
 
+## Adding a Win Crown
+1. In `sketch.js`, add a third parameter in lines 10 or 11 and name it `"win"`
+    - Important: You must put quotation marks in front of `win`
+
+## Displaying Final Scores
+1. After adding a win crown to the winning player, add a fourth parameter and type in the numerical score
+2. For the losing player, add a third parameter with whatever you want, just make sure its in quotation marks. Then type the losing players score in a fourth parameter.
+    - The final result should look like this:
+        ``p1 = new Icon("player1", "Emagination", "win", 20)``
+        ``p2 = new Icon("player1", "Emagination", "s", 16)``
+
 ## How to Push Changes in Github Desktop
 1. In Github Desktop, verify that changes have been made.
     - The icon parameters have been changed.
@@ -45,7 +56,11 @@
     - **Update**: Timer has been commented out but can easily be brought in
 2. While `textAlign()` is set to `CENTER` and has a bounding box of `CENTER`, its possible that having a lot of characters could break that placement.
     - One way to fix it is to decrease `textSize()`, but what if you forget what the original font size was.
+3. When `this.crown` and `this.score` are not present, p5 prints out scope warning in console.
 
 ## Change Log
+### v1.2.1
+    - Added final score text into `Icon.js`
+    - renamed var `vs` to headFont, since its now also used for score text
 ### v1.1.2
  - Timer var and widget have been commented out to save OBS/browser performance
