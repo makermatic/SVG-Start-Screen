@@ -38,7 +38,7 @@
 2. For the losing player, add a third parameter with whatever you want, just make sure its in quotation marks. Then type the losing players score in a fourth parameter.
     - The final result should look like this:
         ``p1 = new Icon("player1", "Emagination", "win", 20)``
-        ``p2 = new Icon("player1", "Emagination", "s", 16)``
+        ``p2 = new Icon("player2", "Emagination", "s", 16)``
 
 ## How to Push Changes in Github Desktop
 1. In Github Desktop, verify that changes have been made.
